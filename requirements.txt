@@ -1,0 +1,41 @@
+# Core
+fastapi==0.95.2
+uvicorn[standard]==0.22.0
+Flask==3.0.3
+python-dotenv==1.0.0
+
+# Hugging Face / LLMs / embeddings
+transformers==4.41.0
+sentence-transformers==2.2.2
+torch==2.2.0      # choose correct CUDA build manually if using GPU
+accelerate==0.23.0
+tokenizers==0.15.2
+safetensors==0.3.0
+
+# Vector DB
+chromadb==0.4.5
+
+# UI
+streamlit==1.26.0
+requests==2.31.0
+
+# Image generation (Stable Diffusion)
+diffusers==0.21.0
+ftfy==6.1.1
+tqdm==4.66.1
+transformers==4.41.0
+scipy==1.11.3
+pillow==10.0.1
+
+# Utils
+pandas==2.2.2
+numpy==1.26.4
+
+# Optional (faster attention / GPU optimizations)
+# xformers may require special install matching torch + CUDA
+# Recommended to install xformers only on GPU machines
+xformers==0.0.20
+
+# Dev / Nice-to-have
+black==24.9.0
+pytest==8.4.3
