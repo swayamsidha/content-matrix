@@ -7,7 +7,7 @@ python-dotenv==1.0.0
 # Hugging Face / LLMs / embeddings
 transformers==4.41.0
 sentence-transformers==2.2.2
-torch==2.2.0      # choose correct CUDA build manually if using GPU
+torch==2.6.0      # install matching CUDA/CPU build manually
 accelerate==0.23.0
 tokenizers==0.15.2
 safetensors==0.3.0
@@ -35,7 +35,3 @@ numpy==1.26.4
 # xformers may require special install matching torch + CUDA
 # Recommended to install xformers only on GPU machines
 xformers==0.0.20
-
-# Dev / Nice-to-have
-black==24.9.0
-pytest==8.4.3
